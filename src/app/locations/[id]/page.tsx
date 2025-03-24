@@ -11,7 +11,7 @@ type Props = {
 };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { id } = params;
+  const { id } = await params;
   const location = await getLocationById(id);
   if (!location) return { title: 'Localización no encontrada' };
 
@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function LocationDetailPage({ params }: Props) {
-  const { id } = params;
+  const { id } = await params;
   const location = await getLocationById(id);
 
   if (!location) notFound();
