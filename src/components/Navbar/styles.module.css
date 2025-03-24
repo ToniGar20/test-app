@@ -1,0 +1,54 @@
+.navbarContainer {
+  background-color: var(--background-secondary);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--padding-layout);
+  gap: var(--items-gap);
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+}
+
+.navbarLogo img {
+  display: block;
+  height: auto;
+  max-height: 60px;
+}
+
+.navbarMenu {
+  list-style: none;
+  display: flex;
+  gap: var(--items-gap);
+  margin-bottom: var(--items-gap);
+  padding: 0;
+}
+
+.navbarMenu a {
+  text-decoration: none;
+  padding-bottom: 4px;
+  font-weight: var(--font-weight-600);
+  transition: border-color 0.3s;
+}
+
+.navbarMenu a:hover {
+  border-bottom: 2px solid var(--white);
+}
+
+.activeTab {
+  border-bottom: 2px solid var(--primary-color);
+}
+
+@media (min-width: 991px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navbarMenu {
+    margin: var(--items-gap);
+  }
+}

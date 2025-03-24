@@ -1,0 +1,46 @@
+.carouselWrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.arrow {
+  background: transparent;
+  border: none;
+  color: var(--primary-color);
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0 8px;
+  transition: color 0.2s ease;
+}
+.arrow:hover {
+  color: var(--color-accent);
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: var(--items-gap-half);
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  flex: 1;
+  max-width: 800px;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.character {
+  text-align: center;
+  width: 100px;
+}
+
+.avatar {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.characterName {
+  font-size: var(--font-size-s);
+}

@@ -1,0 +1,7 @@
+.backLink {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--margin-layout);
+  color: var(--primary-color);
+  text-decoration: none;
+}

@@ -1,0 +1,36 @@
+.wrapper {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: var(--padding-layout);
+  color: var(--white);
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subInfo {
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.characterGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.characterCard {
+  background: #111;
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  text-align: center;
+  color: var(--white);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}

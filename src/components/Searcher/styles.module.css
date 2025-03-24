@@ -1,0 +1,11 @@
+.searchInput {
+  margin-bottom: var(--items-gap);
+  padding: 0.75rem;
+  width: 100%;
+  max-width: 400px;
+  font-size: var(--font-size-m);
+  border-radius: var(--border-radius);
+  border: 1px solid #444;
+  background: var(--backgroudn-tertiary);
+  color: var(--white);
+}

@@ -1,0 +1,61 @@
+.episodeCard {
+  background-color: #111; /* fondo más oscuro que el root */
+  color: var(--white);
+  border-radius: var(--border-radius);
+  gap: var(--items-gap);
+  padding: 1.5rem;
+  border: 1px solid #222;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
+  width: 100%;
+}
+
+.episodeCard:hover {
+  transform: translateY(-4px);
+  border-color: var(--primary-color);
+}
+
+.episodeHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--margin-layout);
+}
+
+.episodeHeader h2 {
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+.episodeCode {
+  background-color: var(--primary-color);
+  color: #000;
+  padding: 4px 12px;
+  border-radius: var(--border-radius-half);
+  font-weight: var();
+}
+
+.episodeAirDate,
+.episodeCharCount {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin: 4px 0;
+}
+
+.episodeLink {
+  display: inline-block;
+  margin-top: var(--margin-layout);
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: var(--font-weight-500);
+  border-bottom: 1px solid transparent;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.episodeLink:hover {
+  border-color: var(--primary-color);
+}

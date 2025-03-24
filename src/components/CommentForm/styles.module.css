@@ -1,0 +1,11 @@
+.formContainer {
+  padding-top: var(--items-gap);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--items-gap-half);
+  max-width: 500px;
+  margin-top: var(--margin-layout);
+}
